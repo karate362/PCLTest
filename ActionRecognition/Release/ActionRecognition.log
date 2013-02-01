@@ -1,0 +1,35 @@
+﻿Build started 2013/1/5 下午 04:40:13.
+     1>Project "C:\ChihChung\Kinect\PCLTest\PCLTest\ActionRecognition\ActionRecognition.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\ActionRecognition.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\include /IC:\OpenCV\build\include /IC:\OpenCV\build\include\opencv /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\ActionRecognition.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\include /IC:\OpenCV\build\include /IC:\OpenCV\build\include\opencv /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ActionRecognition.cpp
+         ActionRecognition.cpp
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>c:\opencv\build\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\OpenCV\build\include\opencv2/legacy/compat.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\ChihChung\Kinect\PCLTest\PCLTest\Release\ActionRecognition.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\OpenCV\build\x64\vc10\lib opencv_core242.lib opencv_calib3d242.lib opencv_contrib242.lib opencv_features2d242.lib opencv_highgui242.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\ActionRecognition.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\ChihChung\Kinect\PCLTest\PCLTest\Release\ActionRecognition.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\ChihChung\Kinect\PCLTest\PCLTest\Release\ActionRecognition.lib" /MACHINE:X86 Release\ActionRecognition.obj
+         Release\IO_Functions.obj
+         Release\LDARec.obj
+         Release\stdafx.obj
+            Creating library C:\ChihChung\Kinect\PCLTest\PCLTest\Release\ActionRecognition.lib and object C:\ChihChung\Kinect\PCLTest\PCLTest\Release\ActionRecognition.exp
+         Generating code
+         Finished generating code
+         ActionRecognition.vcxproj -> C:\ChihChung\Kinect\PCLTest\PCLTest\Release\ActionRecognition.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\ChihChung\Kinect\PCLTest\PCLTest\Release\ActionRecognition.exe;#1" /manifest Release\ActionRecognition.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\ActionRecognition.unsuccessfulbuild".
+         Touching "Release\ActionRecognition.lastbuildstate".
+     1>Done Building Project "C:\ChihChung\Kinect\PCLTest\PCLTest\ActionRecognition\ActionRecognition.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.84

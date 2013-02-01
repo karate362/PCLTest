@@ -1,0 +1,255 @@
+﻿Build started 2012/11/28 上午 10:25:56.
+     1>Project "C:\ChihChung\Kinect\PCLTest\PCLTest\PCLTest\PCLTest.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Debug\".
+       InitializeBuildStatus:
+         Creating "x64\Debug\PCLTest.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I..\GL /IC:\OpenCV\build\include\opencv /IC:\OpenCV\build\include /I..\include /I..\Kinect /I"C:\Program Files\PCL 1.6.0\include\pcl-1.6" /I"C:\Program Files\PCL 1.6.0\3rdParty\Boost\include" /I"C:\Program Files\PCL 1.6.0\3rdParty\Eigen\include" /I"C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include" /I"C:\Program Files\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8" /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"x64\Debug\PCLTest.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I..\GL /IC:\OpenCV\build\include\opencv /IC:\OpenCV\build\include /I..\include /I..\Kinect /I"C:\Program Files\PCL 1.6.0\include\pcl-1.6" /I"C:\Program Files\PCL 1.6.0\3rdParty\Boost\include" /I"C:\Program Files\PCL 1.6.0\3rdParty\Eigen\include" /I"C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include" /I"C:\Program Files\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8" /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt ..\src\PCLfromKinect.cpp KinectRGBD.cpp
+         KinectRGBD.cpp
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_traits.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_cloud.h(1021): warning C4521: 'pcl::PointCloud<Eigen::MatrixXf>' : multiple copy constructors specified
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_traits.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1008): warning C4996: 'pcl::SHOT': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1003) : see declaration of 'pcl::SHOT'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1009): warning C4996: 'pcl::SHOT': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1003) : see declaration of 'pcl::SHOT'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1012): warning C4996: 'pcl::SHOT::rf': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1005) : see declaration of 'pcl::SHOT::rf'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1013): warning C4996: 'pcl::SHOT::descriptor': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1004) : see declaration of 'pcl::SHOT::descriptor'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1014): warning C4996: 'pcl::SHOT::descriptor': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1004) : see declaration of 'pcl::SHOT::descriptor'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1014): warning C4996: 'pcl::SHOT::descriptor': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1004) : see declaration of 'pcl::SHOT::descriptor'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_traits.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_cloud.h(603): warning C4521: 'pcl::PointCloud<PointT>' : multiple copy constructors specified
+                 with
+                 [
+                     PointT=pcl::PointXYZ
+                 ]
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/visualization/pcl_visualizer.h(501) : see reference to class template instantiation 'pcl::PointCloud<PointT>' being compiled
+                 with
+                 [
+                     PointT=pcl::PointXYZ
+                 ]
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_cloud.h(603): warning C4521: 'pcl::PointCloud<PointT>' : multiple copy constructors specified
+                 with
+                 [
+                     PointT=pcl::Normal
+                 ]
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/visualization/pcl_visualizer.h(502) : see reference to class template instantiation 'pcl::PointCloud<PointT>' being compiled
+                 with
+                 [
+                     PointT=pcl::Normal
+                 ]
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_cloud.h(603): warning C4521: 'pcl::PointCloud<PointT>' : multiple copy constructors specified
+                 with
+                 [
+                     PointT=pcl::PrincipalCurvatures
+                 ]
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/visualization/pcl_visualizer.h(503) : see reference to class template instantiation 'pcl::PointCloud<PointT>' being compiled
+                 with
+                 [
+                     PointT=pcl::PrincipalCurvatures
+                 ]
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_cloud.h(603): warning C4521: 'pcl::PointCloud<PointT>' : multiple copy constructors specified
+                 with
+                 [
+                     PointT=pcl::PointXYZRGB
+                 ]
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/visualization/pcl_visualizer.h(724) : see reference to class template instantiation 'pcl::PointCloud<PointT>' being compiled
+                 with
+                 [
+                     PointT=pcl::PointXYZRGB
+                 ]
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_cloud.h(603): warning C4521: 'pcl::PointCloud<PointT>' : multiple copy constructors specified
+                 with
+                 [
+                     PointT=pcl::PointXYZRGBA
+                 ]
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/visualization/pcl_visualizer.h(737) : see reference to class template instantiation 'pcl::PointCloud<PointT>' being compiled
+                 with
+                 [
+                     PointT=pcl::PointXYZRGBA
+                 ]
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_cloud.h(603): warning C4521: 'pcl::PointCloud<PointT>' : multiple copy constructors specified
+                 with
+                 [
+                     PointT=pcl::PointXYZI
+                 ]
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/visualization/cloud_viewer.h(93) : see reference to class template instantiation 'pcl::PointCloud<PointT>' being compiled
+                 with
+                 [
+                     PointT=pcl::PointXYZI
+                 ]
+     1>KinectRGBD.cpp(52): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : see declaration of 'localtime'
+     1>KinectRGBD.cpp(56): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>KinectRGBD.cpp(94): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>KinectRGBD.cpp(96): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>KinectRGBD.cpp(97): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>c:\program files\pcl 1.6.0\3rdparty\eigen\include\eigen\src/Geometry/OrthoMethods.h(99): warning C4305: 'specialization' : truncation from 'const unsigned int' to 'bool'
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/common/distances.h(73) : see reference to function template instantiation 'Eigen::Matrix<_Scalar,_Rows,_Cols> Eigen::MatrixBase<Derived>::cross3<Eigen::CwiseBinaryOp<BinaryOp,Lhs,Rhs>>(const Eigen::MatrixBase<Eigen::CwiseBinaryOp<BinaryOp,Lhs,Rhs>> &) const' being compiled
+                 with
+                 [
+                     _Scalar=float,
+                     _Rows=4,
+                     _Cols=1,
+                     Derived=Eigen::Matrix<float,4,1>,
+                     BinaryOp=Eigen::internal::scalar_difference_op<float>,
+                     Lhs=const Eigen::Matrix<float,4,1>,
+                     Rhs=const Eigen::Matrix<float,4,1>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree<_Traits>::erase' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Traits=std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>>>,false>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree<_Traits>::erase' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Traits=std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>>>,false>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree<_Traits>::erase' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Traits=std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>>>,false>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree<_Traits>::erase' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Traits=std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>>>,false>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree<_Traits>::erase' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Traits=std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>>>,false>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree<_Traits>::erase' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Traits=std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>>>,false>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_const_iterator<_Mytree>::_Tree_const_iterator' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Mytree=std::_Tree_val<std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>>>,false>>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_iterator<_Mytree>::_Tree_iterator' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Mytree=std::_Tree_val<std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>>>,false>>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_const_iterator<_Mytree>::_Tree_const_iterator' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Mytree=std::_Tree_val<std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>>>,false>>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_iterator<_Mytree>::_Tree_iterator' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Mytree=std::_Tree_val<std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>>>,false>>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_const_iterator<_Mytree>::_Tree_const_iterator' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Mytree=std::_Tree_val<std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>>>,false>>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_iterator<_Mytree>::_Tree_iterator' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Mytree=std::_Tree_val<std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>>>,false>>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_unchecked_const_iterator<_Mytree,_Base>::_Tree_unchecked_const_iterator' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Mytree=std::_Tree_val<std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>>>,false>>,
+                     _Base=std::_Iterator_base
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_unchecked_const_iterator<_Mytree,_Base>::_Tree_unchecked_const_iterator' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Mytree=std::_Tree_val<std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>>>,false>>,
+                     _Base=std::_Iterator_base
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_unchecked_const_iterator<_Mytree,_Base>::_Tree_unchecked_const_iterator' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Mytree=std::_Tree_val<std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>>>,false>>,
+                     _Base=std::_Iterator_base
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_val<_Traits>::_Buynode' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Traits=std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::MouseEvent &,boost::function<void (const pcl::visualization::MouseEvent &)>>,boost::signals2::mutex>>>>>>>,false>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_val<_Traits>::_Buynode' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Traits=std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::KeyboardEvent &,boost::function<void (const pcl::visualization::KeyboardEvent &)>>,boost::signals2::mutex>>>>>>>,false>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/variant/variant.hpp(1178): warning C4503: 'std::_Tree_val<_Traits>::_Buynode' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Traits=std::_Tmap_traits<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>,boost::signals2::detail::group_key_less<int,std::less<int>>,std::allocator<std::pair<const std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,std::_List_iterator<std::_List_val<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>,std::allocator<boost::shared_ptr<boost::signals2::detail::connection_body<std::pair<boost::signals2::detail::slot_meta_group,boost::optional<int>>,boost::signals2::slot1<void,const pcl::visualization::PointPickingEvent &,boost::function<void (const pcl::visualization::PointPickingEvent &)>>,boost::signals2::mutex>>>>>>>,false>
+                 ]
+         PCLfromKinect.cpp
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_traits.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_cloud.h(1021): warning C4521: 'pcl::PointCloud<Eigen::MatrixXf>' : multiple copy constructors specified
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_traits.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1008): warning C4996: 'pcl::SHOT': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1003) : see declaration of 'pcl::SHOT'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1009): warning C4996: 'pcl::SHOT': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1003) : see declaration of 'pcl::SHOT'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1012): warning C4996: 'pcl::SHOT::rf': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1005) : see declaration of 'pcl::SHOT::rf'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1013): warning C4996: 'pcl::SHOT::descriptor': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1004) : see declaration of 'pcl::SHOT::descriptor'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1014): warning C4996: 'pcl::SHOT::descriptor': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1004) : see declaration of 'pcl::SHOT::descriptor'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1014): warning C4996: 'pcl::SHOT::descriptor': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1004) : see declaration of 'pcl::SHOT::descriptor'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_cloud.h(603): warning C4521: 'pcl::PointCloud<PointT>' : multiple copy constructors specified
+                 with
+                 [
+                     PointT=pcl::PointXYZRGBA
+                 ]
+                 ..\src\PCLfromKinect.cpp(36) : see reference to class template instantiation 'pcl::PointCloud<PointT>' being compiled
+                 with
+                 [
+                     PointT=pcl::PointXYZRGBA
+                 ]
+     1>..\src\PCLfromKinect.cpp(86): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>c:\program files\pcl 1.6.0\3rdparty\eigen\include\eigen\src/Geometry/OrthoMethods.h(99): warning C4305: 'specialization' : truncation from 'const unsigned int' to 'bool'
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/common/distances.h(73) : see reference to function template instantiation 'Eigen::Matrix<_Scalar,_Rows,_Cols> Eigen::MatrixBase<Derived>::cross3<Eigen::CwiseBinaryOp<BinaryOp,Lhs,Rhs>>(const Eigen::MatrixBase<Eigen::CwiseBinaryOp<BinaryOp,Lhs,Rhs>> &) const' being compiled
+                 with
+                 [
+                     _Scalar=float,
+                     _Rows=4,
+                     _Cols=1,
+                     Derived=Eigen::Matrix<float,4,1>,
+                     BinaryOp=Eigen::internal::scalar_difference_op<float>,
+                     Lhs=const Eigen::Matrix<float,4,1>,
+                     Rhs=const Eigen::Matrix<float,4,1>
+                 ]
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"x64\Debug\PCLTest.exe.embed.manifest.res" x64\Debug\PCLTest_manifest.rc 
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Debug\PCLTest.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\OpenCV\build\x64\vc10\lib /LIBPATH:.\Kinect /LIBPATH:.\GL /LIBPATH:"C:\Program Files\PCL 1.6.0\lib" /LIBPATH:"C:\Program Files\PCL 1.6.0\3rdParty\Boost\lib" /LIBPATH:"C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8" /LIBPATH:"C:\Program Files\PCL 1.6.0\3rdParty\FLANN\lib" /LIBPATH:"C:\Program Files\PCL 1.6.0\3rdParty\Qhull\lib" /LIBPATH:"C:\Program Files\OpenNI\Lib64" opencv_core240d.lib opencv_calib3d240d.lib opencv_contrib240d.lib opencv_features2d240d.lib opencv_highgui240d.lib opencv_imgproc240d.lib opencv_video240d.lib opencv_legacy240d.lib Kinect10.lib glut64.lib pcl_kdtree_debug.lib pcl_io_debug.lib pcl_search_debug.lib pcl_segmentation_debug.lib pcl_apps_debug.lib pcl_features_debug.lib pcl_filters_debug.lib pcl_visualization_debug.lib pcl_common_debug.lib "flann_cpp_s-gd.lib" "libboost_system-vc100-mt-gd-1_47.lib" "libboost_filesystem-vc100-mt-gd-1_47.lib" "libboost_thread-vc100-mt-gd-1_47.lib" "libboost_date_time-vc100-mt-gd-1_47.lib" "libboost_iostreams-vc100-mt-gd-1_47.lib" openNI64.lib "vtkalglib-gd.lib" "vtkCharts-gd.lib" "vtkCommon-gd.lib" "vtkDICOMParser-gd.lib" "vtkexoIIc-gd.lib" "vtkexpat-gd.lib" "vtkFiltering-gd.lib" "vtkfreetype-gd.lib" "vtkftgl-gd.lib" "vtkGenericFiltering-gd.lib" "vtkGeovis-gd.lib" "vtkGraphics-gd.lib" "vtkhdf5-gd.lib" "vtkHybrid-gd.lib" "vtkImaging-gd.lib" "vtkInfovis-gd.lib" "vtkIO-gd.lib" "vtkjpeg-gd.lib" "vtklibxml2-gd.lib" "vtkmetaio-gd.lib" "vtkNetCDF-gd.lib" "vtkNetCDF_cxx-gd.lib" "vtkpng-gd.lib" "vtkproj4-gd.lib" "vtkRendering-gd.lib" "vtksqlite-gd.lib" "vtksys-gd.lib" "vtktiff-gd.lib" "vtkverdict-gd.lib" "vtkViews-gd.lib" "vtkVolumeRendering-gd.lib" "vtkWidgets-gd.lib" "vtkzlib-gd.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\PCLTest.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Debug\PCLTest.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Debug\PCLTest.lib" /MACHINE:X64 x64\Debug\PCLTest.exe.embed.manifest.res
+         x64\Debug\PCLfromKinect.obj
+         x64\Debug\KinectRGBD.obj
+         x64\Debug\stdafx.obj
+     1>LINK : fatal error LNK1104: cannot open file 'opencv_core240d.lib'
+     1>Done Building Project "C:\ChihChung\Kinect\PCLTest\PCLTest\PCLTest\PCLTest.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:25.76

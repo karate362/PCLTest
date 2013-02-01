@@ -1,0 +1,1 @@
+dir *.jpg /b /s > imgname.txt 

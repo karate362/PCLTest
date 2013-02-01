@@ -34,6 +34,13 @@ int main( int argc, char** argv )
 			FindContour( argc, argv+1 );
 		break;
 
+	case 1://Train BOW
+		BOFTraining(argv[2],argv[3],atoi(argv[4]),0,0);//Train BOF dictionary, the input specifies all training images
+		break;
+
+	case 2://Test BOW
+
+		break;
 	}
 
   return(0);

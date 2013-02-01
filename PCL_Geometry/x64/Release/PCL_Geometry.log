@@ -1,0 +1,182 @@
+﻿Build started 2013/1/16 下午 12:47:03.
+     1>Project "C:\ChihChung\Kinect\PCLTest\PCLTest\PCL_Geometry\PCL_Geometry.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Release\PCL_Geometry.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I..\Kinect /I..\include /IC:\OpenCV\build\include /IC:\OpenCV\build\include\opencv /I"C:\Program Files\PCL 1.6.0\include\pcl-1.6" /I"C:\Program Files\PCL 1.6.0\3rdParty\Boost\include" /I"C:\Program Files\PCL 1.6.0\3rdParty\Eigen\include" /I"C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include" /I"C:\Program Files\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8" /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt ActionRecognition.cpp
+         ActionRecognition.cpp
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_traits.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_cloud.h(1021): warning C4521: 'pcl::PointCloud<Eigen::MatrixXf>' : multiple copy constructors specified
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_traits.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1008): warning C4996: 'pcl::SHOT': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1003) : see declaration of 'pcl::SHOT'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1009): warning C4996: 'pcl::SHOT': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1003) : see declaration of 'pcl::SHOT'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1012): warning C4996: 'pcl::SHOT::rf': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1005) : see declaration of 'pcl::SHOT::rf'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1013): warning C4996: 'pcl::SHOT::descriptor': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1004) : see declaration of 'pcl::SHOT::descriptor'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1014): warning C4996: 'pcl::SHOT::descriptor': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1004) : see declaration of 'pcl::SHOT::descriptor'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1014): warning C4996: 'pcl::SHOT::descriptor': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1004) : see declaration of 'pcl::SHOT::descriptor'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_traits.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_traits.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_representation.h(445): warning C4996: 'pcl::SHOT': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1003) : see declaration of 'pcl::SHOT'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_representation.h(446): warning C4996: 'pcl::SHOT': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1003) : see declaration of 'pcl::SHOT'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_representation.h(449): warning C4996: 'pcl::DefaultPointRepresentation<pcl::SHOT>': SHOT POINT IS DEPRECATED, USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_representation.h(446) : see declaration of 'pcl::DefaultPointRepresentation<pcl::SHOT>'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_representation.h(455): warning C4996: 'pcl::SHOT': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1003) : see declaration of 'pcl::SHOT'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_representation.h(458): warning C4996: 'pcl::SHOT::descriptor': USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/impl/point_types.hpp(1004) : see declaration of 'pcl::SHOT::descriptor'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_representation.h(460): warning C4996: 'pcl::DefaultPointRepresentation<pcl::SHOT>::~DefaultPointRepresentation': SHOT POINT IS DEPRECATED, USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_representation.h(460) : compiler has generated 'pcl::DefaultPointRepresentation<pcl::SHOT>::~DefaultPointRepresentation' here
+                 This diagnostic occurred in the compiler generated function 'void *pcl::DefaultPointRepresentation<pcl::SHOT>::__delDtor(unsigned int)'
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_representation.h(460): warning C4996: 'pcl::DefaultPointRepresentation<pcl::SHOT>::~DefaultPointRepresentation': SHOT POINT IS DEPRECATED, USE SHOT352 FOR SHAPE AND SHOT1344 FOR SHAPE+COLOR INSTEAD
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/point_representation.h(460) : compiler has generated 'pcl::DefaultPointRepresentation<pcl::SHOT>::~DefaultPointRepresentation' here
+                 This diagnostic occurred in the compiler generated function 'void *pcl::DefaultPointRepresentation<pcl::SHOT>::__delDtor(unsigned int)'
+     1>C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/util/logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+     1>C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/sample_consensus/ransac.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\3rdParty\Boost\include\boost/format/alt_sstream_impl.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/sample_consensus/ransac.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/sample_consensus/sac_model_registration.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/sample_consensus/sac_model_registration.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\OpenCV\build\include\opencv2/legacy/compat.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>ActionRecognition.cpp(101): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+     1>ActionRecognition.cpp(57): warning C4101: 'pcdname' : unreferenced local variable
+     1>c:\program files\pcl 1.6.0\3rdparty\eigen\include\eigen\src/Geometry/OrthoMethods.h(99): warning C4305: 'specialization' : truncation from 'const unsigned int' to 'bool'
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/common/distances.h(73) : see reference to function template instantiation 'Eigen::Matrix<_Scalar,_Rows,_Cols> Eigen::MatrixBase<Derived>::cross3<Eigen::CwiseBinaryOp<BinaryOp,Lhs,Rhs>>(const Eigen::MatrixBase<Eigen::CwiseBinaryOp<BinaryOp,Lhs,Rhs>> &) const' being compiled
+                 with
+                 [
+                     _Scalar=float,
+                     _Rows=4,
+                     _Cols=1,
+                     Derived=Eigen::Matrix<float,4,1>,
+                     BinaryOp=Eigen::internal::scalar_difference_op<float>,
+                     Lhs=const Eigen::Matrix<float,4,1>,
+                     Rhs=const Eigen::Matrix<float,4,1>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/flann.hpp(78): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/flann.hpp(114) : see reference to function template instantiation 'flann::NNIndex<Distance> *flann::load_saved_index<Distance>(const flann::Matrix<T> &,const std::string &,Distance)' being compiled
+                 with
+                 [
+                     Distance=flann::L2_Simple<float>,
+                     T=float
+                 ]
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/flann.hpp(107) : while compiling class template member function 'flann::Index<Distance>::Index(const flann::Matrix<T> &,const flann::IndexParams &,Distance)'
+                 with
+                 [
+                     Distance=flann::L2_Simple<float>,
+                     T=float
+                 ]
+                 C:\Program Files\PCL 1.6.0\include\pcl-1.6\pcl/kdtree/kdtree_flann.h(377) : see reference to class template instantiation 'flann::Index<Distance>' being compiled
+                 with
+                 [
+                     Distance=flann::L2_Simple<float>
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(489): warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/hierarchical_clustering_index.h(486) : while compiling class template member function 'void flann::HierarchicalClusteringIndex<Distance>::save_tree(FILE *,flann::HierarchicalClusteringIndex<Distance>::Node *,int)'
+                 with
+                 [
+                     Distance=flann::L2_Simple<float>
+                 ]
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(96) : see reference to class template instantiation 'flann::HierarchicalClusteringIndex<Distance>' being compiled
+                 with
+                 [
+                     Distance=flann::L2_Simple<float>
+                 ]
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(102) : see reference to class template instantiation 'flann::valid_combination<Index,Distance,ElementType>::needs_kdtree_distance<T>' being compiled
+                 with
+                 [
+                     Index=flann::HierarchicalClusteringIndex,
+                     Distance=flann::L2_Simple<float>,
+                     ElementType=ElementType,
+                     T=flann::HierarchicalClusteringIndex<flann::L2_Simple<float>>
+                 ]
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(161) : see reference to class template instantiation 'flann::valid_combination<Index,Distance,ElementType>' being compiled
+                 with
+                 [
+                     Index=flann::HierarchicalClusteringIndex,
+                     Distance=flann::L2_Simple<float>,
+                     ElementType=ElementType
+                 ]
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/flann.hpp(118) : see reference to function template instantiation 'flann::NNIndex<Distance> *flann::create_index_by_type<Distance>(const flann::Matrix<T> &,const flann::IndexParams &,const Distance &)' being compiled
+                 with
+                 [
+                     Distance=flann::L2_Simple<float>,
+                     T=float
+                 ]
+     1>C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/dist.h(103): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(688) : see reference to function template instantiation 'float flann::L2_Simple<T>::operator ()<T*,double*>(Iterator1,Iterator2,size_t,float) const' being compiled
+                 with
+                 [
+                     T=float,
+                     Iterator1=float *,
+                     Iterator2=double *
+                 ]
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/kmeans_index.h(644) : while compiling class template member function 'void flann::KMeansIndex<Distance>::computeClustering(flann::KMeansIndex<Distance>::KMeansNode *,int *,int,int,int)'
+                 with
+                 [
+                     Distance=flann::L2_Simple<float>
+                 ]
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(96) : see reference to class template instantiation 'flann::KMeansIndex<Distance>' being compiled
+                 with
+                 [
+                     Distance=flann::L2_Simple<float>
+                 ]
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(102) : see reference to class template instantiation 'flann::valid_combination<Index,Distance,ElementType>::needs_kdtree_distance<T>' being compiled
+                 with
+                 [
+                     Index=flann::KMeansIndex,
+                     Distance=flann::L2_Simple<float>,
+                     ElementType=ElementType,
+                     T=flann::KMeansIndex<flann::L2_Simple<float>>
+                 ]
+                 C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include\flann/algorithms/all_indices.h(152) : see reference to class template instantiation 'flann::valid_combination<Index,Distance,ElementType>' being compiled
+                 with
+                 [
+                     Index=flann::KMeansIndex,
+                     Distance=flann::L2_Simple<float>,
+                     ElementType=ElementType
+                 ]
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\PCL_Geometry.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\OpenCV\build\x64\vc10\lib /LIBPATH:..\Kinect /LIBPATH:..\GL /LIBPATH:"C:\Program Files\PCL 1.6.0\lib" /LIBPATH:"C:\Program Files\PCL 1.6.0\3rdParty\Boost\lib" /LIBPATH:"C:\Program Files\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8" /LIBPATH:"C:\Program Files\PCL 1.6.0\3rdParty\FLANN\lib" /LIBPATH:"C:\Program Files\PCL 1.6.0\3rdParty\Qhull\lib" /LIBPATH:"C:\Program Files\OpenNI\Lib64" opencv_core242.lib opencv_calib3d242.lib opencv_contrib242.lib opencv_features2d242.lib opencv_highgui242.lib opencv_imgproc242.lib opencv_video242.lib opencv_legacy242.lib opencv_nonfree242.lib Kinect10.lib glut64.lib opengl32.lib pcl_kdtree_release.lib pcl_io_release.lib pcl_search_release.lib pcl_segmentation_release.lib pcl_apps_release.lib pcl_features_release.lib pcl_filters_release.lib pcl_visualization_release.lib pcl_common_release.lib flann_cpp_s.lib "libboost_system-vc100-mt-1_47.lib" "libboost_filesystem-vc100-mt-1_47.lib" "libboost_thread-vc100-mt-1_47.lib" "libboost_date_time-vc100-mt-1_47.lib" "libboost_iostreams-vc100-mt-1_47.lib" openNI64.lib vtkalglib.lib vtkCharts.lib vtkCommon.lib vtkDICOMParser.lib vtkexoIIc.lib vtkexpat.lib vtkFiltering.lib vtkfreetype.lib vtkftgl.lib vtkGenericFiltering.lib vtkGeovis.lib vtkGraphics.lib vtkhdf5.lib vtkHybrid.lib vtkImaging.lib vtkInfovis.lib vtkIO.lib vtkjpeg.lib vtklibxml2.lib vtkmetaio.lib vtkNetCDF.lib vtkNetCDF_cxx.lib vtkpng.lib vtkproj4.lib vtkRendering.lib vtksqlite.lib vtksys.lib vtktiff.lib vtkverdict.lib vtkViews.lib vtkVolumeRendering.lib vtkWidgets.lib vtkzlib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Release\PCL_Geometry.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\PCL_Geometry.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\PCL_Geometry.lib" /MACHINE:X64 x64\Release\IO_Functions.obj
+         x64\Release\LDARec.obj
+         x64\Release\PCLfromKinect.obj
+         x64\Release\RobustMatcher.obj
+         x64\Release\ActionRecognition.obj
+         x64\Release\PCL_Geometry.obj
+         x64\Release\PnP_Localization.obj
+         x64\Release\Proj2D.obj
+         x64\Release\RGBD_Mapping.obj
+         x64\Release\RGBD_Odometry.obj
+         x64\Release\stdafx.obj
+            Creating library C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\PCL_Geometry.lib and object C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\PCL_Geometry.exp
+         Generating code
+         Finished generating code
+         PCL_Geometry.vcxproj -> C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\PCL_Geometry.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\PCL_Geometry.exe;#1" /manifest x64\Release\PCL_Geometry.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\PCL_Geometry.unsuccessfulbuild".
+         Touching "x64\Release\PCL_Geometry.lastbuildstate".
+     1>Done Building Project "C:\ChihChung\Kinect\PCLTest\PCLTest\PCL_Geometry\PCL_Geometry.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:27.14

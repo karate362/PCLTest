@@ -82,7 +82,7 @@ void Mat2PCL_XYZRGB_MATCH_PnP(cv::Mat &pointCloud_XYZ,vector<cv::Point3f>& p3ds,
 
 				//Notice!  because the RGB image if flipped from Kinect!!
 				//The coordinate of Kinect is different from openCV
-				//p2d_2.x = 640 - p2d_2.x;
+
 				p2d_2.y = 480.0f - p2d_2.y;
 				p2ds.push_back(p2d_2);
 			}

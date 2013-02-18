@@ -2,27 +2,7 @@
 
 #include <fstream>
 #include <Eigen\src\Core\Matrix.h>
-
-void ComputePnP(const char* folder_name,int start_idx,int total_num,int jump_num);//Compute two-view PnP
-
-void Compute_Geometry(const char* folder_name,int start_idx,int total_num,int jump_num,const int app_idx,int icp_itnum,double icp_threshold = 0.05);//Compute geometry
-
-void FindMatchSeq(const char* folder_name,int ref_idx,int start_idx,int total_num,int jump_num,double epidist,double confidence,bool is_save = false);//Find matching sequence
-
-void ViewGeometry(const char* folder_name,int start_idx,int total_num,int jump_num);//Read computed geometry
-
-void FindFeatureAndDraw(const char* folder_name,int start_idx,int total_num,int jump_num);
-
-void PnPLocalization(const char* folder_name,int start_idx,int total_num,int jump_num);
-
-void GenerateActionTrainData(int t1,int t2,int cidx);//delta is computed by spacing between t1~t2, cidx is the class index
-
-void ActionRecognition(const char* folder_name,int start_idx,int total_num,int jump_num);
-
-template <typename PointT> void PCL2P3d(const pcl::PointCloud<PointT> &cloud,vector<cv::Point3f>& p3ds);
-void Kps2P2d(int idx,std::vector<cv::DMatch >& matches,std::vector<cv::KeyPoint>& keypoints,std::vector<cv::Point2f>& p2ds);
-void PnPret2Mat4f(cv::Mat& rvec,cv::Mat& tvec,Eigen::Matrix4f& M);
-
+#include "OpenCV2PCL.h"
 
 class RT3D{
 
@@ -63,3 +43,32 @@ public:
 	double R[3][3];
 	double T[3];
 };
+
+void ComputePnP(const char* folder_name,int start_idx,int total_num,int jump_num);//Compute two-view PnP
+
+void Compute_Geometry(const char* folder_name,int start_idx,int total_num,int jump_num,const int app_idx,int icp_itnum,double icp_threshold = 0.05);//Compute geometry
+
+
+//Given RT, matches, keypoints, output the 3D points and corresponding index in keypoints 1
+void Reconstruct3D(RT3D& RT, std::vector<cv::DMatch> & Matches,std::vector<cv::KeyPoint>& img1_keypoints, std::vector<cv::KeyPoint>& img2_keypoints, std::vector<int>& pidxs, std::vector<cv::Point3f>& points);
+
+void Reconstruct3D(RT3D& RT, std::vector<cv::DMatch> & Matches,std::vector<cv::Point3f>& img1_keypoints, std::vector<cv::Point3f>& img2_keypoints, std::vector<int>& pidxs, std::vector<cv::Point3f>& points);
+
+
+void FindMatchSeq(const char* folder_name,int ref_idx,int start_idx,int total_num,int jump_num,double epidist,double confidence,bool is_save = false);//Find matching sequence
+
+void ViewGeometry(const char* folder_name,int start_idx,int total_num,int jump_num);//Read computed geometry
+
+void FindFeatureAndDraw(const char* folder_name,int start_idx,int total_num,int jump_num);
+
+void PnPLocalization(const char* folder_name,int start_idx,int total_num,int jump_num);
+
+void GenerateActionTrainData(int t1,int t2,int cidx);//delta is computed by spacing between t1~t2, cidx is the class index
+
+void ActionRecognition(const char* folder_name,int start_idx,int total_num,int jump_num);
+
+template <typename PointT> void PCL2P3d(const pcl::PointCloud<PointT> &cloud,vector<cv::Point3f>& p3ds);
+void Kps2P2d(int idx,std::vector<cv::DMatch >& matches,std::vector<cv::KeyPoint>& keypoints,std::vector<cv::Point2f>& p2ds);
+void PnPret2Mat4f(cv::Mat& rvec,cv::Mat& tvec,Eigen::Matrix4f& M);
+
+

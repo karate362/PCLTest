@@ -17,6 +17,7 @@ using namespace std;
 
 
 double CamIntrinsic[3][3] = {{531.15f, 0.0f, 320.0f}, {0.0f, 531.15f, 240.0f}, {0.0f, 0.0f, 1.0f}};
+double InvCam[3][3] = {{531.15f, 0.0f, 320.0f}, {0.0f, 531.15f, 240.0f}, {0.0f, 0.0f, 1.0f}};
 double DisCoef[5] = {0.0f,0.0f,0.0f,0.0f,0.0f};
 
 template <typename PointT> void PCL2P3d(const pcl::PointCloud<PointT> &cloud,vector<cv::Point3f>& p3ds){

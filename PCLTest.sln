@@ -7,7 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PCL_Geometry", "PCL_Geometr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ActionRecognition", "ActionRecognition\ActionRecognition.vcxproj", "{08F082F0-5D6F-4564-860F-7161166F44DD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tools", "FindContour\Tools\Tools.vcxproj", "{AE37284F-9997-4BEA-B993-9AA3A2B31078}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tools", "Tools\Tools.vcxproj", "{AE37284F-9997-4BEA-B993-9AA3A2B31078}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

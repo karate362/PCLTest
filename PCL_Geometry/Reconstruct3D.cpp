@@ -21,7 +21,7 @@ void CalibratePoints(std::vector<cv::Point3f>& points){
 //wrapper
 void Reconstruct3D(RT3D& RT, std::vector<cv::DMatch> & Matches,std::vector<cv::KeyPoint>& img1_keypoints, std::vector<cv::KeyPoint>& img2_keypoints, std::vector<int>& pidxs, std::vector<cv::Point3f>& points){
 	
-	printf("Calibrating!\n");
+
 	vector<Point3f> points1, points2;
 	Point3f p;
 	p.z = 1.0;
@@ -40,7 +40,6 @@ void Reconstruct3D(RT3D& RT, std::vector<cv::DMatch> & Matches,std::vector<cv::K
 	CalibratePoints(points1);
 	CalibratePoints(points2);
 
-	printf("Reconstruct!\n");
 	Reconstruct3D(RT, Matches, points1, points2, pidxs, points);
 }
 
@@ -58,7 +57,6 @@ void Reconstruct3D(RT3D& RT, std::vector<cv::DMatch> & Matches,std::vector<cv::P
 	points.clear();
 
 	for(int i=0;i<Matches.size(); ++i){
-		printf("loop %d\n",i);
 		Point3f x1 = img1_keypoints[Matches[i].queryIdx];
 		Point3f x2 = img2_keypoints[Matches[i].trainIdx];
 		

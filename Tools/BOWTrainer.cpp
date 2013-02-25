@@ -230,7 +230,13 @@ void BOFDiffMatching(const char* folder_name,int start_idx,int total_num,int jum
 
 		
 		cv::imshow("keypt",img1);
-		cv::waitKey(0);
+		cv::waitKey(10);
+
+		//Save Image
+		IplImage matsave = img1;
+		sprintf(imgname2,"match_%d.jpg",img_idx+d);
+		cvSaveImage(imgname2,&matsave);
+
 	}
 
 }

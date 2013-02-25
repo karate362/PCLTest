@@ -51,6 +51,7 @@ int main( int argc, char** argv )
 	int img_num,img_num2;
 	int Func = 0;
 	bool save = 0;
+	int det_type = 0;
 
 	if(argc <2)
 	{
@@ -78,6 +79,34 @@ int main( int argc, char** argv )
 	case 3:
 		BOFDiffMatching(argv[2],atoi(argv[3]),atoi(argv[4]),atoi(argv[5]),argv[6],0,0);
 		break;
+
+
+	case 7://2D feature
+		if ( argc-2 < 3 ) /* argc should be 2 for correct execution */
+		{
+			/* We print argv[0] assuming it is the program name */
+			printf( "usage: %s %d foldname, start index, total image number, jump number\n", argv[0],Func );
+			return 0;
+		}
+		else 
+		{
+			sprintf(folder_name,"%s",argv[2]);
+
+			img_idx = atoi(argv[3]);
+
+			img_num = atoi(argv[4]);//total image number
+
+			img_num2 = atoi(argv[5]);//space of image reading
+
+			det_type = atoi(argv[6]);//detector type
+
+			save = atoi(argv[7]);//if to save the image
+
+		}
+
+		Find2Dfeature(folder_name,img_idx,img_num,img_num2,det_type,save);
+		break;
+
 
 	case 100://Test function
 		TestFunction();

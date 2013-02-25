@@ -19,7 +19,7 @@ inline double dist(const cv::Point3f& P1,const cv::Point3f& P2){
 	return sqrt( dx*dx + dy*dy + dz*dz );
 }
 
-void DBSCAN:: compute2D(std::vector<cv::KeyPoint>& points,double eps,int minPts){
+void DBSCAN:: compute2D(const std::vector<cv::KeyPoint>& points,double eps,int minPts){
 
 	std::vector <cv::Point3f> D;
 	D.resize(points.size());
@@ -31,7 +31,7 @@ void DBSCAN:: compute2D(std::vector<cv::KeyPoint>& points,double eps,int minPts)
 	compute3D(D, eps, minPts);
 }
 
-void DBSCAN::compute3D(std::vector<cv::Point3f>& D,double eps,int minPts){
+void DBSCAN::compute3D(const std::vector<cv::Point3f>& D,double eps,int minPts){
 	Cidxs.resize(D.size());
 	visited.resize(D.size());
 	for(int i=0;i<Cidxs.size();++i){

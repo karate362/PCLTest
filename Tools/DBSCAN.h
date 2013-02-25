@@ -8,11 +8,11 @@ public:
 	DBSCAN(void);
 	~DBSCAN(void);
 
-	void compute2D(std::vector<cv::KeyPoint>& points,double eps,int minPts);
+	void compute2D(const std::vector<cv::KeyPoint>& points,double eps,int minPts);
 
 	//void compute2D(std::vector<cv::Point3f>& points,double eps,int minPts);
 
-	void compute3D(std::vector<cv::Point3f>& points,double eps,int minPts);
+	void compute3D(const std::vector<cv::Point3f>& points,double eps,int minPts);
 
 	std::vector<int>* GetCidxs(){
 		return &(Cidxs);

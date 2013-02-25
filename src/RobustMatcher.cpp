@@ -68,6 +68,7 @@ cv::Mat RobustMatcher::match(//KeyPoints and descriptors are already computed
    // Construction of the matcher 
    // from image 1 to image 2 
    // based on k nearest neighbours (with k=2) 
+	matches.clear();
    std::vector<std::vector<cv::DMatch> > matches1; 
    matcher->knnMatch(descriptors1,descriptors2, 
        matches1, // vector of matches (up to 2 per entry) 

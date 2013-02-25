@@ -150,10 +150,17 @@ void BOFDiffMatching(const char* folder_name,int start_idx,int total_num,int jum
 
 
 	RobustMatcher rMatcher; 
-
-	cv::Ptr<cv::FeatureDetector> detector = new cv::SiftFeatureDetector(); 
+	cv::Ptr<cv::FeatureDetector> detector = new cv::FastFeatureDetector(5); 
+	//cv::Ptr<cv::FeatureDetector> detector = new cv::SiftFeatureDetector(); 
 	cv::Ptr<cv::DescriptorExtractor> extractor = new cv::SiftDescriptorExtractor(); 
+	//cv::Ptr<cv::FeatureDetector> detector = new cv::SurfFeatureDetector(); 
+	//cv::Ptr<cv::DescriptorExtractor> extractor = new cv::SurfDescriptorExtractor(); 
+	//cv::Ptr<cv::DescriptorExtractor> extractor = new cv::OrbDescriptorExtractor(); 
 	cv::Ptr<cv::DescriptorMatcher> Matcher= new cv::BFMatcher(cv::NORM_L2);
+
+	
+	//cv::Ptr<cv::DescriptorExtractor> extractor = new cv::OrbDescriptorExtractor(); 
+	//cv::Ptr<cv::DescriptorMatcher> Matcher= new cv::BFMatcher(cv::NORM_HAMMING2);
 
 	rMatcher.setFeatureDetector(detector); 
 	rMatcher.setDescriptorExtractor(extractor); 
@@ -169,8 +176,8 @@ void BOFDiffMatching(const char* folder_name,int start_idx,int total_num,int jum
 
 		sprintf(imgname2,"%s/rgb_%d.jpg",folder_name,img_idx+d+img_num2);
 
-		img1 = cv::imread(imgname);
-		img2 = cv::imread(imgname2);
+		img1 = cv::imread(imgname,CV_LOAD_IMAGE_GRAYSCALE);
+		img2 = cv::imread(imgname2,CV_LOAD_IMAGE_GRAYSCALE);
 	
 		detector->detect(img1,img1_keypoints); 
 		extractor->compute(img1,img1_keypoints,img1_descriptors); 
@@ -179,11 +186,14 @@ void BOFDiffMatching(const char* folder_name,int start_idx,int total_num,int jum
 		detector->detect(img2,img2_keypoints); 
 		extractor->compute(img2,img2_keypoints,img2_descriptors); 
 		//Matcher->match(img2_descriptors,dictionary, dicmatch2);  
-
+		
 		rMatcher.match(Matches, img1_keypoints, img2_keypoints,img1_descriptors,img2_descriptors); 
 		
 
 		//////////////////Draw/////////////////////
+		img1 = cv::imread(imgname);
+		img2 = cv::imread(imgname2);
+
 		ret_keypoints.clear(); 
 		
 		for (vector<DMatch>::iterator iter=Matches.begin();iter!=Matches.end();iter++)  //for each matched point in img1
@@ -192,6 +202,7 @@ void BOFDiffMatching(const char* folder_name,int start_idx,int total_num,int jum
 			Point center= img1_keypoints[iter->queryIdx].pt;  
 
 			//Find d in img1_matches
+			/*
 			sprintf(fstr,"%d",-1);
 			for (vector<DMatch>::iterator iter1=dicmatch1.begin();iter1!=dicmatch1.end();iter1++){
 				if(iter1->queryIdx == iter->queryIdx){
@@ -199,8 +210,11 @@ void BOFDiffMatching(const char* folder_name,int start_idx,int total_num,int jum
 					break;
 				}
 			}
-			//putText(img1, fstr,  center, FONT_HERSHEY_SIMPLEX, 0.5 ,Scalar :: all(-1));
+			putText(img1, fstr,  center, FONT_HERSHEY_SIMPLEX, 0.5 ,Scalar :: all(-1));*/
 		}  
+
+		cv::drawKeypoints(img1,ret_keypoints,img1);
+		//cv::drawKeypoints(img1,img1_keypoints,img1);
 
 		//clustering
 		dbscan.compute2D(ret_keypoints,20.0f,3);
@@ -209,11 +223,12 @@ void BOFDiffMatching(const char* folder_name,int start_idx,int total_num,int jum
 		for(int i=0;i<cidxs.size();++i){
 			Point center= ret_keypoints[i].pt;
 			sprintf(fstr,"%d",cidxs[i]);
+			if(cidxs[i] >=0)
 			putText(img1, fstr,  center, FONT_HERSHEY_SIMPLEX, 0.5 ,Scalar(255,255,0,255));
 		}
 
 
-		cv::drawKeypoints(img1,ret_keypoints,img1);
+		
 		cv::imshow("keypt",img1);
 		cv::waitKey(0);
 	}

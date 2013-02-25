@@ -1,19 +1,21 @@
-﻿Build started 2013/2/18 下午 08:44:59.
+﻿Build started 2013/2/23 下午 06:16:55.
      1>Project "C:\Works\PHD\PCLTest\PCLTest\Tools\Tools.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "x64\Release\Tools.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
          All outputs are up-to-date.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\OpenCV\build\include /I../include /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt Tools.cpp
-         Tools.cpp
-     1>Tools.cpp(49): warning C4101: 'img_idx' : unreferenced local variable
-     1>Tools.cpp(50): warning C4101: 'img_num' : unreferenced local variable
-     1>Tools.cpp(50): warning C4101: 'img_num2' : unreferenced local variable
-     1>Tools.cpp(48): warning C4101: 'folder_name' : unreferenced local variable
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\OpenCV\build\include /I../include /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt BOWTrainer.cpp
+         BOWTrainer.cpp
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>C:\OpenCV\build\include\opencv2/legacy/compat.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Works\PHD\PCLTest\PCLTest\x64\Release\Tools.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\OpenCV\build\x64\vc10\lib opencv_core243.lib opencv_calib3d243.lib opencv_contrib243.lib opencv_features2d243.lib opencv_nonfree243.lib opencv_highgui243.lib opencv_imgproc243.lib opencv_video243.lib opencv_legacy243.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Release\Tools.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Works\PHD\PCLTest\PCLTest\x64\Release\Tools.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Works\PHD\PCLTest\PCLTest\x64\Release\Tools.lib" /MACHINE:X64 x64\Release\RobustMatcher.obj
          x64\Release\BOWTrainer.obj
          x64\Release\DBSCAN.obj
+         x64\Release\Find2DFeatures.obj
          x64\Release\FindContour.obj
          x64\Release\stdafx.obj
          x64\Release\Tools.obj
@@ -29,4 +31,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.79
+Time Elapsed 00:00:04.75

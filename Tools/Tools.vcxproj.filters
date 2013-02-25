@@ -50,5 +50,8 @@
     <ClCompile Include="DBSCAN.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Find2DFeatures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

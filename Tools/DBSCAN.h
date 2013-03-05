@@ -18,6 +18,10 @@ public:
 		return &(Cidxs);
 	}
 
+	std::vector<std::vector<int>>* GetClusters(){
+		return &(clusters);
+	}
+
 private:
 	
 	void expandCluster(const std::vector<cv::Point3f>& D,const int Pi, std::vector<int>& neighbor, const int C, double eps,int minPts);//C is the cluster index

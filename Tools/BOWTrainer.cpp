@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <direct.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "Tools.h"
@@ -217,9 +218,11 @@ void BOFDiffMatching(const char* folder_name,int start_idx,int total_num,int jum
 		//cv::drawKeypoints(img1,img1_keypoints,img1);
 
 		//clustering
-		dbscan.compute2D(ret_keypoints,20.0f,3);
+		dbscan.compute2D(ret_keypoints,15.0f,3);
 		std::vector<int>& cidxs = *(dbscan.GetCidxs());
-		printf("clustered: %d points\n",cidxs.size());
+		std::vector<std::vector<int>>& clusters = *(dbscan.GetClusters());
+
+		printf("%d clusters\n",clusters.size());
 		for(int i=0;i<cidxs.size();++i){
 			Point center= ret_keypoints[i].pt;
 			sprintf(fstr,"%d",cidxs[i]);
@@ -240,3 +243,4 @@ void BOFDiffMatching(const char* folder_name,int start_idx,int total_num,int jum
 	}
 
 }
+

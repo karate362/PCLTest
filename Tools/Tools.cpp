@@ -77,7 +77,7 @@ int main( int argc, char** argv )
 		break;
 
 	case 3:
-		BOFDiffMatching(argv[2],atoi(argv[3]),atoi(argv[4]),atoi(argv[5]),argv[6],0,0);
+		DiffMatching(argv[2],atoi(argv[3]),atoi(argv[4]),atoi(argv[5]),argv[6],0,0,atoi(argv[7]));
 		break;
 
 
@@ -104,7 +104,7 @@ int main( int argc, char** argv )
 
 		}
 
-		Find2Dfeature(folder_name,img_idx,img_num,img_num2,det_type,save);
+		//Find2Dfeature(folder_name,img_idx,img_num,img_num2,det_type,save);
 		break;
 
 

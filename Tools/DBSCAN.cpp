@@ -78,7 +78,7 @@ void DBSCAN::expandCluster(const std::vector<cv::Point3f>& D,const int Pi, std::
 	//Push P into cluster C
 	Cidxs[Pi] = C;
 	clusters[C].push_back(Pi);
-	printf("%d neighbors\n",neighbor.size());
+	//printf("%d neighbors\n",neighbor.size());
 
 	//add P to...
 	std::vector<bool> inN1(D.size(),false);

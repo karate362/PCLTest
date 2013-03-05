@@ -149,7 +149,7 @@
     <ClCompile Include="..\src\RobustMatcher.cpp" />
     <ClCompile Include="BOWTrainer.cpp" />
     <ClCompile Include="DBSCAN.cpp" />
-    <ClCompile Include="Find2DFeatures.cpp" />
+    <ClCompile Include="ExtractRobustFeature.cpp" />
     <ClCompile Include="FindContour.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

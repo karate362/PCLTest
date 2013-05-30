@@ -124,6 +124,24 @@ class RobustMatcher {
     } 
   } 
  
+
+ void UseMatch1( 
+      const std::vector<std::vector<cv::DMatch> >& matches1, 
+      const std::vector<std::vector<cv::DMatch> >& matches2, 
+      std::vector<cv::DMatch>& symMatches) { 
+    
+    for (std::vector<std::vector<cv::DMatch> >:: 
+             const_iterator matchIterator1= matches1.begin(); 
+         matchIterator1!= matches1.end(); ++matchIterator1) { 
+       // ignore deleted matches 
+       if (matchIterator1->size() < 2) 
+           continue; 
+		
+	   symMatches.push_back( cv::DMatch((*matchIterator1)[0].queryIdx, (*matchIterator1)[0].trainIdx, (*matchIterator1)[0].distance)); 
+
+    } 
+ } 
+
   // Identify good matches using RANSAC 
   // Return fundemental matrix 
   cv::Mat ransacTest( 
@@ -213,5 +231,14 @@ class RobustMatcher {
 	 cv::Mat& descriptors1,
 	 cv::Mat& descriptors2
 	 );
+
+   int easymatch(//KeyPoints and descriptors are already computed
+     std::vector<cv::DMatch>& matches, 
+     std::vector<cv::KeyPoint>& keypoints1, 
+     std::vector<cv::KeyPoint>& keypoints2,
+	 cv::Mat& descriptors1,
+	 cv::Mat& descriptors2
+	 );
+
 
 }; 

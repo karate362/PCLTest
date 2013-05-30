@@ -30,12 +30,12 @@
     <ClInclude Include="DBSCAN.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ExtractROIs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Tools.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FindContour.cpp">
@@ -51,6 +51,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ExtractRobustFeature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtractROIs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Find2DFeatures.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

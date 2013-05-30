@@ -1,7 +1,0 @@
-C4F_1\rgb_50.jpg
-C4F_1\rgb_55.jpg
-C4F_1\rgb_60.jpg
-C4F_1\rgb_65.jpg
-C4F_1\rgb_70.jpg
-C4F_1\rgb_75.jpg
-C4F_1\rgb_80.jpg

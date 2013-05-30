@@ -1,5 +1,6 @@
-﻿Build started 2013/3/1 下午 03:19:33.
+﻿Build started 2013/5/15 上午 09:17:04.
      1>Project "C:\ChihChung\Kinect\PCLTest\PCLTest\Tools\Tools.vcxproj" on node 2 (build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>InitializeBuildStatus:
          Creating "x64\Release\Tools.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
@@ -11,19 +12,22 @@
      1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
      1>c:\opencv\build\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
      1>C:\OpenCV\build\include\opencv2/legacy/compat.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (950). Save the file in Unicode format to prevent data loss
+     1>ExtractRobustFeature.cpp(32): warning C4101: 'fstr' : unreferenced local variable
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\Tools.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\OpenCV\build\x64\vc10\lib opencv_core243.lib opencv_calib3d243.lib opencv_contrib243.lib opencv_features2d243.lib opencv_nonfree243.lib opencv_highgui243.lib opencv_imgproc243.lib opencv_video243.lib opencv_legacy243.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Release\Tools.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\Tools.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\Tools.lib" /MACHINE:X64 x64\Release\RobustMatcher.obj
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\Release\Tools.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\OpenCV\build\x64\vc10\lib opencv_core243.lib opencv_calib3d243.lib opencv_contrib243.lib opencv_features2d243.lib opencv_nonfree243.lib opencv_highgui243.lib opencv_imgproc243.lib opencv_video243.lib opencv_legacy243.lib opencv_flann243.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Release\Tools.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\ChihChung\Kinect\PCLTest\Release\Tools.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\Release\Tools.lib" /MACHINE:X64 x64\Release\RobustMatcher.obj
          x64\Release\BOWTrainer.obj
          x64\Release\DBSCAN.obj
          x64\Release\ExtractRobustFeature.obj
+         x64\Release\ExtractROIs.obj
+         x64\Release\Find2DFeatures.obj
          x64\Release\FindContour.obj
          x64\Release\stdafx.obj
          x64\Release\Tools.obj
          Generating code
          Finished generating code
-         Tools.vcxproj -> C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\Tools.exe
+         Tools.vcxproj -> C:\ChihChung\Kinect\PCLTest\PCLTest\Tools\..\..\Release\Tools.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\ChihChung\Kinect\PCLTest\PCLTest\x64\Release\Tools.exe;#1" /manifest x64\Release\Tools.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\Release\Tools.exe;#1" /manifest x64\Release\Tools.exe.intermediate.manifest
        FinalizeBuildStatus:
          Deleting file "x64\Release\Tools.unsuccessfulbuild".
          Touching "x64\Release\Tools.lastbuildstate".
@@ -31,4 +35,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.17
+Time Elapsed 00:00:06.78
